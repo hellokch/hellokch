@@ -8,5 +8,8 @@
 </head>
 <body>
 joinPro 입니다.
+${count} 개 저장하였습니다.
+<br>
+${member}
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 <div class="w3-container">
 <h2>회원가입</h2>
-	<form class="w3-container" action="/jspPro/view/joinPro.jsp">
+	<form class="w3-container" action="/jspPro/member/joinPro" method = "post">
 		
 		<table class="w3-table-all">
 			
@@ -35,8 +35,8 @@
 			<tr>
 
 				<td>성별</td>
-				<td><input type="radio" name="gender" checked>
-					남 <input type="radio" name="gender" >여</td>
+				<td><input type="radio" name="gender" checked  value="0">
+					남 <input type="radio" name="gender" value="1">여</td>
 			</tr>
 			<tr>
 				<td>전화번호</td>

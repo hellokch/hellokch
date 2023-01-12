@@ -52,11 +52,11 @@ public class MemberController extends MskimRequestMapping {
 		pstmt.setString(7, "");
 
 		int count = pstmt.executeUpdate();
+		request.setAttribute("count",count);
+		request.setAttribute("member",member);
+		System.out.println(count + "insert 했습니다.");
 		
-		System.out.println(count + "insert 합니다.");
-		
-		
-		return "view/index.jsp";
+		return "/view/joinPro.jsp";
 
 	}
 
